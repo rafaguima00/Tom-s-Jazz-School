@@ -1,0 +1,237 @@
+:root {
+    --cor-primaria: #ED4D1B;
+    --cor-secundaria: #FF9A3C;
+    --cor-preta: #000000;
+    --cor-branca: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    font-family: 'Roboto', sans-serif;
+    margin: 0 16px;
+}
+
+.cabecalho {
+    border: solid var(--cor-preta) 1px;
+    padding: 8px;
+}
+
+.divisao-cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itens-cabecalho {
+    display: inline;
+}
+
+.link--itens {
+    color: var(--cor-preta);
+}
+
+.link--itens:hover {
+    color: var(--cor-primaria);
+}
+
+.link--itens-cabecalho {
+    padding: 0 32px;
+}
+
+.botao {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: var(--cor-primaria);
+    border: 2px solid var(--cor-preta);
+    box-shadow: 2px 2px 0px var(--cor-preta);
+    display: block;
+    cursor: pointer;
+}
+
+.botao:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+}
+
+.conteudo-principal {
+    border-bottom: solid var(--cor-preta) 1px;
+    border-left: solid var(--cor-preta) 1px;
+    border-right: solid var(--cor-preta) 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 180px 68px;
+}
+
+.divisao-conteudo {
+    width: 30%;
+}
+
+.titulo-conteudo {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.cor-destaque {
+    color: var(--cor-primaria);
+}
+
+.decoration {
+    position: relative;
+    display: block;
+}
+
+.decoration::after {
+    position: absolute;
+    content: '';
+    background: url('img/Group\ 5.svg');
+    width: 40px;
+    height: 36px;
+    top: -10px;
+}
+
+.descricao-conteudo {
+    font-size: 22px;
+    padding: 42px 0;
+}
+
+.imagem-vector {
+    display: block;
+    margin: 0 auto;
+}
+
+.imagem-conteudo {
+    height: 561px;
+}
+
+.conteudo--secundario-decoration {
+    border-bottom: solid var(--cor-preta) 1px;
+    border-left: solid var(--cor-preta) 1px;
+    border-right: solid var(--cor-preta) 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-secundario {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 0 60px;
+}
+
+.cartao {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 10px;
+    border: 2px solid var(--cor-preta);
+    box-shadow: 2px 2px 0px var(--cor-preta);
+    width: 272px;
+    height: 306px;
+    padding: 36px;
+    overflow: auto;
+}
+
+.cartao--laranja {
+    background-color: var(--cor-primaria);
+    margin-top: -100px;
+
+}
+
+.cartao--cor-de-pele {
+    background-color: var(--cor-secundaria);
+    margin-top: -80px;
+}
+
+.icone-cartao {
+    grid-column: span 5;
+    grid-row: 1;
+}
+
+.titulo-cartao {
+    grid-column: span 5;
+    grid-row: 2;
+}
+
+.descricao-cartao {
+    grid-column: span 5;
+    grid-row: 3;
+}
+
+.imagem--vector-cartao {
+    grid-column: 5;
+    grid-row: 5;
+    cursor: pointer;
+}
+
+.conteudo-terciario {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 40px auto 64px;
+}
+
+.titulo--conteudo-terciario {
+    font-size: 48px;
+}
+
+.botao--conhecer-cursos {
+    align-self: center;
+}
+
+.rodape {
+    border-left: solid var(--cor-preta) 1px;
+    border-right: solid var(--cor-preta) 1px;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+.conteudo-rodape {
+    width: 272px;
+}
+
+.conteudo-rodape h2 {
+    font-size: 32px;
+}
+
+.conteudo-rodape h3 {
+    font-size: 16px;
+}
+
+.descricao--conteudo-rodape {
+    padding-top: 48px;
+}
+
+.itens-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 26px;
+}
+
+.form-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email {
+    width: 500px;
+    height: 36px;
+    border: 2px solid var(--cor-preta);
+    box-shadow: 2px 2px 0px var(--cor-preta);
+}
+
+.botao-rodape {
+    width: 180px;
+}
