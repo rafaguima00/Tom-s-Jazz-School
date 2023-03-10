@@ -15,18 +15,23 @@
 body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
     font-family: 'Roboto', sans-serif;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .cabecalho {
     border: solid var(--cor-preta) 1px;
-    padding: 8px;
+    border-top: none;
+    padding: 1rem 4rem;
 }
 
 .divisao-cabecalho {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.titulo-cabecalho {
+    font-size: 2.2rem;
 }
 
 .itens-cabecalho {
@@ -47,9 +52,9 @@ body {
 
 .botao {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: auto;
     padding: 10px;
     background: var(--cor-primaria);
     border: 2px solid var(--cor-preta);
@@ -64,12 +69,11 @@ body {
 }
 
 .conteudo-principal {
-    border-bottom: solid var(--cor-preta) 1px;
-    border-left: solid var(--cor-preta) 1px;
-    border-right: solid var(--cor-preta) 1px;
+    border: solid var(--cor-preta) 1px;
+    border-top: none;
     display: flex;
     justify-content: space-between;
-    padding: 60px 0 180px 68px;
+    padding: 3.75rem 0 11rem 4rem;
 }
 
 .divisao-conteudo {
@@ -78,7 +82,7 @@ body {
 
 .titulo-conteudo {
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .cor-destaque {
@@ -100,13 +104,13 @@ body {
 }
 
 .descricao-conteudo {
-    font-size: 22px;
-    padding: 42px 0;
+    font-size: 1.5rem;
+    padding: 2.5rem 0;
 }
 
 .imagem-vector {
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto;
 }
 
 .imagem-conteudo {
@@ -124,8 +128,8 @@ body {
 .conteudo-secundario {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    padding: 0 0 60px;
+    gap: 0.75rem;
+    padding: 0 0 4rem;
 }
 
 .cartao {
@@ -143,13 +147,13 @@ body {
 
 .cartao--laranja {
     background-color: var(--cor-primaria);
-    margin-top: -100px;
+    margin-top: -7rem;
 
 }
 
 .cartao--cor-de-pele {
     background-color: var(--cor-secundaria);
-    margin-top: -80px;
+    margin-top: -4.5rem;
 }
 
 .icone-cartao {
@@ -176,12 +180,12 @@ body {
 .conteudo-terciario {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    margin: 40px auto 64px;
+    gap: 3rem;
+    margin: 2.5rem auto 4rem;
 }
 
 .titulo--conteudo-terciario {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .botao--conhecer-cursos {
@@ -193,7 +197,7 @@ body {
     border-right: solid var(--cor-preta) 1px;
     display: flex;
     justify-content: space-around;
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 
 .conteudo-rodape {
@@ -201,28 +205,29 @@ body {
 }
 
 .conteudo-rodape h2 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .conteudo-rodape h3 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .descricao--conteudo-rodape {
-    padding-top: 48px;
+    padding-top: 3rem;
 }
 
 .itens-rodape {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 26px;
+    gap: 1.6rem;
 }
 
 .form-rodape {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .email {
@@ -230,6 +235,7 @@ body {
     height: 36px;
     border: 2px solid var(--cor-preta);
     box-shadow: 2px 2px 0px var(--cor-preta);
+    padding-right: 4rem;
 }
 
 .botao-rodape {
