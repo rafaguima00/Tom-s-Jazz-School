@@ -1,10 +1,19 @@
 const botaoFormulario = document.querySelector('#botao-form')
 const emailFormulario = document.querySelector('#email')
 
-botaoFormulario.addEventListener('click', (evento) => {
+botaoFormulario.addEventListener('submit', (evento) => {
     evento.preventDefault()
 
-    alert(`E-mail '${emailFormulario.value}' cadastrado com sucesso!`)
+    if (emailFormulario.value == "") {
+        const elementWarningText = document.querySelector('.warning-text')
+        elementWarningText.innerText = "Preencha este campo com um e-mail válido."
+
+    } else {
+        alert(`E-mail '${emailFormulario.value}' cadastrado com sucesso!`)
+
+        const elementWarningText = document.querySelector('.warning-text')
+        elementWarningText.innerText = ""
+    }
 
     emailFormulario.value = ""
 })

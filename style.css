@@ -241,3 +241,9 @@ body {
 .botao-rodape {
     width: 180px;
 }
+
+.warning-text {
+    color: red;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
